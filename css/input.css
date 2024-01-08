@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Regular';
+    src: url("../assets/fonts/ABCGintoNord-Regular-Trial.otf");
+}
+@font-face {
+    font-family: 'Ultra';
+    src: url("../assets/fonts/ABCGintoNord-Ultra-Trial.otf");
+}
+@font-face {
+    font-family: 'Thin';
+    src: url("../assets/fonts/ABCGintoNord-Thin-Trial.otf");
+}
+
+.font-Regular{
+    font-family: 'Regular';
+}
+.font-Ultra{
+    font-family: 'Ultra';
+}
+.font-Thin{
+    font-family: 'Thin';
+}

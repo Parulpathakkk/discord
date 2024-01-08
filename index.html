@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <title>Discord</title>
+</head>
+
+<body x-data="{'darkMode':false}">
+    <main :class="{'dark':darkMode === true}">
+        <div class="min-h-screen flex flex-col bg-white dark:bg-[#1F1F1F]">
+            <header
+                class="px-[0.4cqw] pt-[0.4cqw] text-black dark:text-[#FAFBFA] font-Thin tracking-tight text-[0.8cqw] h-full w-full">
+                <div class="flex md:gap-[0.4cqw]">
+                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[20%] rounded-[0.6cqw] relative">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[50%] 2xl:h-[45%]">
+                            <svg class="dark:fill-[#fafbfa] fill-[#626df2] h-full w-full" id="discord-svgrepo-com"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.14 32.532">
+                                <path id="Path_247" data-name="Path 247"
+                                    d="M26.93,0A34.229,34.229,0,0,1,35.6,2.725,36.327,36.327,0,0,1,41.847,27.08a34.6,34.6,0,0,1-10.64,5.452,26.329,26.329,0,0,1-2.277-3.751,22.338,22.338,0,0,0,3.593-1.749c-.3-.223-.592-.456-.879-.7a24.506,24.506,0,0,1-21.261,0c-.284.24-.578.473-.879.7a22.394,22.394,0,0,0,3.586,1.745,26.446,26.446,0,0,1-2.277,3.751A34.664,34.664,0,0,1,.178,27.08,36.363,36.363,0,0,1,6.409,2.731,34.115,34.115,0,0,1,15.086,0,24.647,24.647,0,0,1,16.21,2.306a31.835,31.835,0,0,1,9.609,0A25.422,25.422,0,0,1,26.93,0Zm83.391,10.406a10.372,10.372,0,0,1,5.761,1.489V16.22A7.155,7.155,0,0,0,114.2,15.3a7.312,7.312,0,0,0-2.3-.355,6.042,6.042,0,0,0-3.365.8,2.43,2.43,0,0,0-1.216,2.1,2.459,2.459,0,0,0,1.18,2.093,6,6,0,0,0,3.424.817,7.863,7.863,0,0,0,2.281-.341,8.4,8.4,0,0,0,1.93-.841v4.183a11.057,11.057,0,0,1-5.9,1.56,10.786,10.786,0,0,1-4.816-1,6.979,6.979,0,0,1-2.995-2.694,7.407,7.407,0,0,1-1-3.829,6.835,6.835,0,0,1,4.1-6.438A11.117,11.117,0,0,1,110.321,10.406Zm-17.378,0a14.023,14.023,0,0,1,3.564.425,9.779,9.779,0,0,1,2.684,1.087v3.71a9.865,9.865,0,0,0-2.512-1.053,11.025,11.025,0,0,0-2.929-.388q-2.177,0-2.175.756a.567.567,0,0,0,.337.53,5.488,5.488,0,0,0,1.236.368l2.314.425a6.732,6.732,0,0,1,3.378,1.4,3.794,3.794,0,0,1,1.111,2.968,3.943,3.943,0,0,1-1.838,3.417,9.14,9.14,0,0,1-5.219,1.266,15.185,15.185,0,0,1-3.864-.5,12.093,12.093,0,0,1-3.378-1.442V19.454A9.247,9.247,0,0,0,88.7,20.933a12.728,12.728,0,0,0,3.692.577,2.8,2.8,0,0,0,1.259-.223c.285-.149.427-.327.427-.533a.808.808,0,0,0-.232-.591,1.978,1.978,0,0,0-.9-.4l-2.777-.638a7.1,7.1,0,0,1-3.388-1.573,3.552,3.552,0,0,1-1.005-2.633,3.52,3.52,0,0,1,.88-2.387,5.585,5.585,0,0,1,2.5-1.57A11.68,11.68,0,0,1,92.943,10.4Zm75.2-2.576V24.842h-5.669v-3.1a5.48,5.48,0,0,1-2.185,2.66,6.78,6.78,0,0,1-3.623.908,5.9,5.9,0,0,1-3.355-.955,6.266,6.266,0,0,1-2.211-2.623,8.853,8.853,0,0,1-.777-3.771,8.512,8.512,0,0,1,.823-3.9,6.358,6.358,0,0,1,5.891-3.663,5.3,5.3,0,0,1,5.389,3.469l.048.122V7.827ZM126.587,10.4a10.949,10.949,0,0,1,4.744.945,6.772,6.772,0,0,1,4.072,6.4,7.312,7.312,0,0,1-1.041,3.852,7.152,7.152,0,0,1-3.045,2.718,11.793,11.793,0,0,1-9.463,0,7.108,7.108,0,0,1-4.109-6.57,6.938,6.938,0,0,1,1.054-3.795,7.1,7.1,0,0,1,3.045-2.613A10.947,10.947,0,0,1,126.587,10.4ZM83.12,14.275V24.916H77.468V14.275A7.119,7.119,0,0,0,83.12,14.275ZM147.2,10.71a3.808,3.808,0,0,1,2.106.567v5.1a4.027,4.027,0,0,0-2.291-.591,3.567,3.567,0,0,0-2.846,1.145,5.33,5.33,0,0,0-.995,3.558v4.348H137.5V11.017h5.554v4.4a7.366,7.366,0,0,1,1.494-3.558A3.4,3.4,0,0,1,147.2,10.71ZM65.5,8.3a13.176,13.176,0,0,1,5.521,1.04A7.447,7.447,0,0,1,74.4,12.232a8.045,8.045,0,0,1,1.123,4.244,7.67,7.67,0,0,1-4.733,7.252,14.094,14.094,0,0,1-5.937,1.111H56.474V8.3Zm-51.466,5.28a4.058,4.058,0,0,0-3.778,4.3,4.079,4.079,0,0,0,3.778,4.3,4.053,4.053,0,0,0,3.778-4.3A4.032,4.032,0,0,0,14.032,13.579Zm13.962,0a4.058,4.058,0,0,0-3.778,4.3,4.079,4.079,0,0,0,3.778,4.3,4.055,4.055,0,0,0,3.778-4.3A4.032,4.032,0,0,0,27.994,13.579Zm98.59,1.176a3.157,3.157,0,0,0-2.327.841,3.041,3.041,0,0,0-.843,2.255,2.943,2.943,0,0,0,3.17,3.143,3.087,3.087,0,0,0,2.3-.864,3.118,3.118,0,0,0,.846-2.279,3.024,3.024,0,0,0-.846-2.255A3.113,3.113,0,0,0,126.584,14.754Zm32.763.071a3.131,3.131,0,0,0-2.291.841,2.918,2.918,0,0,0-.856,2.184,2.959,2.959,0,0,0,.856,2.2,3.076,3.076,0,0,0,2.268.851,3.141,3.141,0,0,0,2.3-.864,3.009,3.009,0,0,0,.866-2.232,2.881,2.881,0,0,0-.843-2.151A3.154,3.154,0,0,0,159.347,14.825ZM65.085,12.506H62.262v8.13h2.5a4.723,4.723,0,0,0,3.378-1.121,4.026,4.026,0,0,0,1.18-3.062,3.924,3.924,0,0,0-1.051-2.87A4.269,4.269,0,0,0,65.085,12.506ZM80.3,7.3A2.717,2.717,0,0,1,83.123,9.9a2.837,2.837,0,0,1-5.653,0A2.717,2.717,0,0,1,80.3,7.3Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[60%] p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] flex items-center">
+                        <ul class="flex justify-around items-center w-full">
+                            <l1><a href="" class="group">
+                                    <span
+                                        class="relative after:w-full after:max-w-[30%] group-hover:text-darkblueHead group-hover:after:max-w-[30%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Download</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[40%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Nitro</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[30%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Discover</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[30%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Safety</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[30%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Support</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[40%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Blogs</span>
+                                </a></l1>
+                            <l1><a href="" class="group"><span
+                                        class="relative after:w-full after:max-w-0 group-hover:text-darkblueHead group-hover:after:max-w-[35%] after:origin-left after:transition-all after:absolute after:h-[.14cqw] after:rounded-full after:bg-[#404EED] after:top-full after:left-0">Career</span>
+                                </a></l1>
+                        </ul>
+                    </div>
+                    <div class="w-[20%] flex justify-between md:gap-[0.4cqw] items-center">
+                        <div
+                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] w-[50%] flex justify-center items-center h-full">
+                            <div class="flex justify-end items-center space-x-2">
+                                <label for="toggle"
+                                    class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[2.3cqw] 2xl:h-[2cqw] gap-[0.5cqw] pr-[0.2cqw] pl-[0.2cqw] dark:pr-[0.4cqw] py-[0.2cqw]">
+                                    <div
+                                        class="toggle-dot cursor-pointer bg-white transform duration-300 ease-in-out flex justify-center items-center rounded-full h-full aspect-square">
+                                        <img class="h-[0.8cqw]" src="./assets/moon.svg" alt="" />
+                                    </div>
+                                    <div
+                                        class="toggle-dot cursor-pointer dark:bg-[#1F1F1F] bg-black aspect-square transform duration-300 ease-in-ou flex justify-center items-center rounded-full h-full">
+                                        <img class="h-[1cqw]" src="./assets/sun.svg" alt="" />
+                                    </div>
+                                </label>
+                                <input id="toggle" type="checkbox" class="hidden" :value="darkMode"
+                                    @change="darkMode = !darkMode" />
+                            </div>
+                        </div>
+                        <div
+                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] w-[50%] flex justify-center items-center">
+                            <div
+                                class="cursor-pointer border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[2.3cqw] 2xl:h-[2cqw] gap-[1cqw] px-[2cqw] hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-300 transition-all">
+                                Login
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="m-[0.4cqw]">
+                <div class="flex justify-between gap-[0.4cqw]">
+                    <div class="flex flex-col w-[70%] gap-[0.4cqw]">
+                        <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] py-[5.5cqw] 2xl:py-[5cqw] rounded-[0.6cqw] w-full h-full flex justify-end items-center 2xl:pr-[3cqw]">
+                            <div class="relative z-10">
+                            <h3 class="text-[#1F1F1F] dark:text-white font-Ultra text-[8.5cqw] 2xl:text-[7.5cqw] leading-[0.75]">
+                                IMAGINE <br />
+                                A PLACE…
+                            </h3>
+                           <img class="absolute top-[-22%] left-[16%] h-[30%] -z-10" src="assets/cloudtop.svg" alt="">
+                           <img class="absolute top-[-5%] left-[30%] h-[10%] z-10" src="assets/neonstar.svg" alt="">
+                           <img class="absolute top-0 left-[33%] h-[3%] z-10" src="assets/flatcloudsmall.svg" alt="">
+                           <img class="absolute top-[32%] left-[-7%] h-[8%] z-10" src="assets/flatcloud.svg" alt="">
+                           <img class="absolute bottom-[-7%] left-[-2%] h-[38%] z-10" src="assets/pinkbigstar.svg" alt="">
+                           <img class="absolute top-[53%] left-[38%] h-[6%] z-10" src="assets/pinkstar.svg" alt="">
+                           <img class="absolute bottom-[13%] right-[38%] h-[6%] z-10" src="assets/neonstar.svg" alt="">
+                           <img class="absolute bottom-[-4%] right-[22%] h-[19%] z-10" src="assets/linecloud.svg" alt="">
+                           <img class="absolute top-[-4%] right-[20%] h-[28%] z-10" src="assets/bluestar.svg" alt="">
+                           <img class="absolute top-[28%] right-[-4%] h-[28%] z-10" src="assets/fatcloud.svg" alt="">
+                           <img class="absolute bottom-[-72%] left-[-2%] h-[62%] z-10" src="assets/arrow.svg" alt="">
+                        </div>
+                        </div>
+                        <div class="flex w-full h-full gap-[0.4cqw]">
+                            <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] px-[3cqw] pt-[3cqw] 2xl:pt-[2cqw] 2xl:pb-[1.6cqw] pb-[2cqw] rounded-[0.6cqw] w-[58%] h-full flex justify-center items-center">
+                                <p class="font-Regular text-[#1F1F1F] dark:text-white text-[1.5cqw] 2xl:text-[1.3cqw]">
+                                    …WHERE YOU CAN BELONG TO A <br /><span
+                                        class="underline decoration-[1px] underline-offset-2">SCHOOL CLUB</span>, A
+                                    <span class="underline decoration-[1px] underline-offset-2">GAMING GROUP</span>,
+                                    <br />
+                                    OR A <span class="underline decoration-[1px] underline-offset-2">WORLDWIDE ART
+                                        COMMUNITY <br /> </span>. WHERE JUST YOU AND A HANDFUL OF <br />
+                                    FRIENDS CAN SPEND TIME <br />
+                                    TOGETHER. A PLACE THAT MAKES IT <br />EASY TO TALK EVERY DAY AND <br />
+                                    HANG OUT MORE OFTEN.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col w-[42%] h-full gap-[0.4cqw] font-Thin dark:text-white text-[1.3cqw] 2xl:text-[1.2cqw] tracking-tight">
+                                <div class="rounded-[0.6cqw] h-full bg-[#5865F2] flex justify-center items-center text-white">
+                                    Download for Mac</div>
+                                <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] h-full flex justify-center items-center text-[#1F1F1F] dark:text-white">
+                                    Open Discord in your browser</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[30%] border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[1.8cqw] rounded-[0.6cqw] relative overflow-y-hidden">
+                        <img class="absolute bottom-[-2.5cqw] 2xl:bottom-0 h-full 2xl:h-[90%] left-0" src="./assets/bgdicord.svg" alt="" />
+                        <img class="absolute top-[3%] right-[8%] h-[3%] z-10 scale-x-[-1]" src="assets/fatcloud.svg" alt="">
+                        <img class="absolute top-[15%] left-[18%] h-[3%] z-10 " src="assets/fatcloud.svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
