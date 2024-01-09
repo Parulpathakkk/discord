@@ -839,6 +839,14 @@ video {
   gap: 1cqw;
 }
 
+.gap-\[1\] {
+  gap: 1;
+}
+
+.gap-\[2cqw\] {
+  gap: 2cqw;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -855,6 +863,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[1cqw\] {
+  border-radius: 1cqw;
 }
 
 .border-\[1px\] {
@@ -1216,6 +1228,10 @@ video {
 
   .md\:gap-\[0\.5cqw\] {
     gap: 0.5cqw;
+  }
+
+  .md\:rounded-\[0\.6cqw\] {
+    border-radius: 0.6cqw;
   }
 
   .md\:p-\[1\.9cqw\] {
