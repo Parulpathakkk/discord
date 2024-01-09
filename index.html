@@ -14,10 +14,10 @@
     <main :class="{'dark':darkMode === true}">
         <div class="min-h-screen flex flex-col bg-white dark:bg-[#1F1F1F]">
             <header
-                class="px-[0.4cqw] pt-[0.4cqw] text-black dark:text-[#FAFBFA] font-Thin tracking-tight text-[0.8cqw] h-full w-full">
-                <div class="flex md:gap-[0.4cqw]">
-                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[20%] rounded-[0.6cqw] relative">
-                        <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[50%] 2xl:h-[45%]">
+                class="px-[1cqw] md:px-[0.4cqw] pt-[1cqw] md:pt-[0.4cqw] text-black dark:text-[#FAFBFA] font-Thin tracking-tight text-[2cqw] md:text-[0.8cqw] h-full w-full">
+                <div class="flex gap-[1cqw] md:gap-[0.4cqw]">
+                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[40%] md:w-[20%] rounded-[0.6cqw] relative">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 m:h-[50%] 2xl:h-[45%]">
                             <svg class="dark:fill-[#fafbfa] fill-[#626df2] h-full w-full" id="discord-svgrepo-com" data-aos-delay="100" data-aos="zoom-in"  data-aos-duration="900"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.14 32.532">
                                 <path id="Path_247" data-name="Path 247"
@@ -25,7 +25,8 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[60%] p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] flex items-center">
+                    <!-- Dp menu -->
+                    <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] w-[60%] p-[3cqw] md:p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] hidden md:flex items-center">
                         <ul class="flex justify-around items-center w-full">
                             <l1><a href="" class="group">
                                     <span
@@ -51,19 +52,19 @@
                                 </a></l1>
                         </ul>
                     </div>
-                    <div class="w-[20%] flex justify-between md:gap-[0.4cqw] items-center">
+                    <div class="w-[60%] md:w-[20%] flex justify-between gap-[1cqw] md:gap-[0.4cqw] items-center">
                         <div
-                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] w-[50%] flex justify-center items-center h-full">
+                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] w-1/3 md:w-[50%] flex justify-center items-center h-full">
                             <div class="flex justify-end items-center space-x-2" data-aos-delay="200" data-aos="zoom-in"  data-aos-duration="900">
                                 <label for="toggle"
-                                    class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[2.3cqw] 2xl:h-[2cqw] gap-[0.5cqw] pr-[0.2cqw] pl-[0.2cqw] dark:pr-[0.4cqw] py-[0.2cqw]">
+                                    class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[4cqw] md:h-[2.3cqw] 2xl:h-[2cqw] gap-[1cqw] md:gap-[0.5cqw] pr-[0.2cqw] pl-[0.5cqw] md:pl-[0.2cqw] dark:pr-[0.4cqw] py-[0.5cqw] md:py-[0.2cqw]">
                                     <div
                                         class="toggle-dot cursor-pointer bg-white transform duration-300 ease-in-out flex justify-center items-center rounded-full h-full aspect-square hover:bg-gray-300 hover:dark:bg-white">
-                                        <img class="h-[0.8cqw]" src="./assets/moon.svg" alt="" />
+                                        <img class="h-[2cqw] md:h-[0.8cqw]" src="./assets/moon.svg" alt="" />
                                     </div>
                                     <div
                                         class="toggle-dot cursor-pointer dark:bg-[#1F1F1F] bg-black aspect-square transform duration-300 ease-in-ou flex justify-center items-center rounded-full h-full">
-                                        <img class="h-[0.9cqw]" src="./assets/sun.svg" alt="" />
+                                        <img class="h-[2cqw] md:h-[0.9cqw]" src="./assets/sun.svg" alt="" />
                                     </div>
                                 </label>
                                 <input id="toggle" type="checkbox" class="hidden" :value="darkMode"
@@ -71,24 +72,28 @@
                             </div>
                         </div>
                         <div
-                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] w-[50%] flex justify-center items-center">
+                            class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[3cqw] md:p-[1.9cqw] 2xl:p-[1.5cqw] rounded-[0.6cqw] w-1/3 md:w-[50%] flex justify-center items-center">
                             <div data-aos-delay="200" data-aos="zoom-in"  data-aos-duration="900"
-                                class="cursor-pointer border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[2.3cqw] 2xl:h-[2cqw] gap-[1cqw] px-[2cqw] hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-300 transition-all">
+                                class="cursor-pointer border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-full flex justify-between items-center h-[4cqw] md:h-[2.3cqw] 2xl:h-[2cqw] gap-[1cqw] px-[2cqw] hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-300 transition-all">
                                 Login
                             </div>
                         </div>
+                        <div
+                        class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] w-1/3 md:w-[50%] md:hidden flex justify-center items-center h-full">
+                       Menu
+                    </div>
                     </div>
                 </div>
             </header>
 
-            <section class="m-[0.4cqw]">
+            <section class="m-[1cqw] md:m-[0.4cqw]">
                 <div class="flex justify-between gap-[0.4cqw]">
-                    <div class="flex flex-col w-[70%] gap-[0.4cqw]">
-                        <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] py-[5.5cqw] 2xl:py-[5cqw] rounded-[0.6cqw] w-full h-full flex justify-end items-center 2xl:pr-[3cqw]">
+                    <div class="flex flex-col w-full md:w-[70%] gap-[0.4cqw]">
+                        <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] py-[16cqw] md:py-[5.5cqw] 2xl:py-[5cqw] rounded-[0.6cqw] w-fullh-auto md:h-full flex justify-center md:justify-end items-center 2xl:pr-[3cqw]">
                             <div class="relative z-10">
                                 <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                                     data-aos-duration="1000"
-                                    class="text-[#1F1F1F] dark:text-white font-Ultra text-[8.5cqw] 2xl:text-[7.5cqw] leading-[0.75]">
+                                    class="text-[#1F1F1F] dark:text-white font-Ultra text-[12cqw] md:text-[8.5cqw] 2xl:text-[7.5cqw] leading-[0.75]">
                                     IMAGINE <br />
                                     A PLACE…
                                 </h3>
@@ -122,28 +127,41 @@
                                     alt="" />
                             </div>
                         </div>
+                        <!-- Phone Image -->
+                        <div class="md:hidden w-full border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] py-[26cqw] rounded-[0.6cqw] relative ">
+                                <img class="absolute bottom-0 right-0 h-[120%]"
+                                src="./assets/bgdicord.svg" alt="" />
+                                <div class="absolute top-[3%] right-[8%] h-[3%] z-10">
+                            <img class="scale-x-[-1] h-full w-full" data-aos-delay="200" data-aos="fade-up"  data-aos-duration="1000" src="assets/fatcloud.svg"
+                                alt=""/>
+                            </div>
+                                <div class="absolute top-[15%] left-[18%] h-[3%] z-10">
+                            <img class="h-full w-full" data-aos-delay="200" data-aos="fade-up"  data-aos-duration="1000" src="assets/fatcloud.svg"
+                                alt=""/>
+                            </div>
+                        </div>
                         <div class="flex w-full h-full gap-[0.4cqw]">
-                            <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] px-[3cqw] pt-[3cqw] 2xl:pt-[2cqw] 2xl:pb-[1.6cqw] pb-[2cqw] rounded-[0.6cqw] w-[58%] h-full flex justify-center items-center">
-                                <p class="font-Regular text-[#1F1F1F] dark:text-white text-[1.5cqw] 2xl:text-[1.3cqw]" data-aos-delay="200" data-aos="fade-up" data-aos-duration="900">
-                                    …WHERE YOU CAN BELONG TO A <br /><span
+                            <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] px-[6cqw] md:px-[3cqw] py-[8cqw] md:pt-[3cqw] 2xl:pt-[2cqw] 2xl:pb-[1.6cqw] md:pb-[2cqw] rounded-[0.6cqw] w-[58%] h-full flex justify-center items-center">
+                                <p class="font-Regular text-[#1F1F1F] dark:text-white text-[3cqw] md:text-[1.5cqw] 2xl:text-[1.3cqw]" data-aos-delay="200" data-aos="fade-up" data-aos-duration="900">
+                                    …WHERE YOU CAN BELONG TO A <br class="hidden md:block" /><span
                                         class="underline decoration-[1px] underline-offset-2">SCHOOL CLUB</span>, A
                                     <span class="underline decoration-[1px] underline-offset-2">GAMING GROUP</span>,
-                                    <br />
+                                    <br  class="hidden md:block" />
                                     OR A <span class="underline decoration-[1px] underline-offset-2">WORLDWIDE ART
-                                        COMMUNITY <br /> </span>. WHERE JUST YOU AND A HANDFUL OF <br />
-                                    FRIENDS CAN SPEND TIME <br />
-                                    TOGETHER. A PLACE THAT MAKES IT <br />EASY TO TALK EVERY DAY AND <br />
+                                        COMMUNITY <br  class="hidden md:block" /> </span>. WHERE JUST YOU AND A HANDFUL OF <br  class="hidden md:block" />
+                                    FRIENDS CAN SPEND TIME <br  class="hidden md:block"/>
+                                    TOGETHER. A PLACE THAT MAKES IT <br  class="hidden md:block"/>EASY TO TALK EVERY DAY AND <br class="hidden md:block" />
                                     HANG OUT MORE OFTEN.
                                 </p>
                             </div>
                             <div
-                                class="flex flex-col w-[42%] h-full gap-[0.4cqw] font-Thin dark:text-white text-[1.3cqw] 2xl:text-[1.2cqw] tracking-tight">
+                                class="flex flex-col w-[42%] h-full gap-[0.4cqw] font-Thin dark:text-white text-[3cqw] md:text-[1.3cqw] 2xl:text-[1.2cqw] tracking-tight">
                                 <div class="rounded-[0.6cqw] h-full bg-[#5865F2] flex justify-center items-center text-white"><p data-aos="fade-up"  data-aos-duration="1000">Download for Mac</p></div>
-                                <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] h-full flex justify-center items-center text-[#1F1F1F] dark:text-white"><p>Open Discord in your browser</p></div>
+                                <div class="border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] rounded-[0.6cqw] h-full flex justify-center items-center text-[#1F1F1F] dark:text-white px-[6cqw] text-center"><p>Open Discord in your browser</p></div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-[30%] border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[1.8cqw] rounded-[0.6cqw] relative overflow-y-hidden">
+                    <div class="md:block hidden w-[30%] border-[1px] border-[#1F1F1F] dark:border-[#E8E8E8] p-[1.8cqw] rounded-[0.6cqw] relative overflow-y-hidden">
                         <img class="absolute bottom-[-2.5cqw] 2xl:bottom-0 h-full 2xl:h-[90%] left-0"
                             src="./assets/bgdicord.svg" alt="" />
                             <div class="absolute top-[3%] right-[8%] h-[3%] z-10">
